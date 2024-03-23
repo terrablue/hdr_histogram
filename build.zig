@@ -19,5 +19,6 @@ pub fn build(b: *std.build.Builder) void {
         "-DHDR_MALLOC_INCLUDE=\"hdr_redis_malloc.h\"",
     });
 
+    lib.installHeader("hdr_histogram.h", "hdr_histogram.h");
     b.installArtifact(lib);
 }
