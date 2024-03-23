@@ -6,7 +6,7 @@ pub fn build(b: *std.build.Builder) void {
     const optimize = b.standardOptimizeOption(.{});
 
     const lib = b.addStaticLibrary(.{
-        .name = "hdrhistogram",
+        .name = "hdr_histogram",
         .target = target,
         .optimize = optimize,
     });
